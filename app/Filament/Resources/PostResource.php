@@ -18,13 +18,18 @@ use Filament\Forms\Components\Select;
 use Filament\Forms\Components\RichEditor;
 use Filament\Tables\Columns\SelectColumn;
 
+// use BezhanSalleh\FilamentShield\Traits\HasPageShield;
+
 
 
 class PostResource extends Resource
 {
+    // use HasPageShield;
     protected static ?string $model = Post::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+
+
 
     public static function form(Form $form): Form
     {
